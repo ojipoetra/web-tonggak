@@ -1,0 +1,47 @@
+.active {
+  color: #fff;
+  background: #72bb36;
+  border-radius: 2rem;
+  padding: 6px;
+}
+/* warna bullet default */
+.swiper-pagination-bullet {
+  background: #d1d5db !important ; /* abu-abu Tailwind slate-300 */
+  opacity: 1 !important ;
+}
+
+/* warna bullet ketika aktif */
+.swiper-pagination-bullet-active {
+  background: #72bb36 !important ; /* hijau sesuai tema */
+}
+
+/* animation modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+.animate-fadeOut {
+  animation: fadeOut 0.25s ease-in forwards;
+}
